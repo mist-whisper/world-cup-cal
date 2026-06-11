@@ -85,7 +85,7 @@ export function generateICalFile(matches, season = 2026) {
     calData += constant.DTSTART + startTime + '\n';
     calData += constant.DTEND + endTime + '\n';
 
-    // 如果 API 返回了体育场信息，则写入原生 LOCATION 字段
+    // 保持系统原生的 LOCATION 字段
     if (match.venue) {
       calData += 'LOCATION:' + formatICalText(match.venue) + '\n';
     }
@@ -98,6 +98,11 @@ export function generateICalFile(matches, season = 2026) {
     
     if (match.matchday) {
       description += `轮次: 第${match.matchday}轮 `;
+    }
+
+    // 备注栏里添加球场信息
+    if (match.venue) {
+      description += `球场: ${match.venue} `;
     }
 
     const matchResult = formatMatchResult(match);
