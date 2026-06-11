@@ -3,7 +3,7 @@ name: Update World Cup Calendar
 on:
   schedule:
     - cron: '0 4 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 允许手动点击运行
   push:
     branches:
       - main
@@ -12,6 +12,16 @@ on:
       - 'src/**'
       - 'index.js'
       - 'package.json'
+      - '*.js' # 👈 新增：如果你的常量配置文件在根目录下，确保它被修改时能触发自动化流程
+
+# 全局环境变量
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # 👈 核心修改：强制 Actions 运行在 Node 24，彻底消除黄色警告
+
+# 显式声明权限，防止仓库安全策略变动导致运行失败
+permissions:
+  contents: write # 允许推送生成的 ics 文件回仓库
+  issues: write   # 允许在运行失败时创建 Issue 提醒
 
 jobs:
   update-calendar:
@@ -26,7 +36,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20' # 保持稳定的 Node 环境
       
       - name: Install dependencies
         run: npm install
