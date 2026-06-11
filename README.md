@@ -4,8 +4,8 @@
 
 订阅ics文件可主动更新，推荐使用此方法订阅
 
-* ics文件订阅地址: https://cdn.jsdelivr.net/gh/lizijing98/world-cup-cal/WorldCupSchedule.ics
-* github下载地址(GFW内不稳定需代理): https://raw.githubusercontent.com/lizijing98/world-cup-cal/master/WorldCupSchedule.ics
+* ics文件订阅地址: https://cdn.jsdelivr.net/gh/mist-whisper/world-cup-cal@master/WorldCupSchedule.ics
+* github下载地址(GFW内不稳定需代理): https://raw.githubusercontent.com/mist-whisper/world-cup-cal/master/WorldCupSchedule.ics
 
 ## 更新
 
