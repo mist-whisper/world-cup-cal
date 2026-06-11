@@ -85,23 +85,27 @@ export function generateICalFile(matches, season = 2026) {
     calData += constant.DTSTART + startTime + '\n';
     calData += constant.DTEND + endTime + '\n';
 
+    // 如果 API 返回了体育场信息，则写入原生 LOCATION 字段
+    if (match.venue) {
+      calData += 'LOCATION:' + formatICalText(match.venue) + '\n';
+    }
+
     let description = '';
     
     if (match.stage) {
-      description += `阶段: ${getStageName(match.stage)}\n`;
+      description += `阶段: ${getStageName(match.stage)} `;
     }
     
     if (match.matchday) {
-      description += `轮次: 第${match.matchday}轮\n`;
+      description += `轮次: 第${match.matchday}轮 `;
     }
 
     const matchResult = formatMatchResult(match);
     if (matchResult) {
-      description += `比分: ${matchResult}\n`;
+      description += `比分: ${matchResult} `;
     }
 
     description += `更新时间: ${updateTime}`;
-    // description += `开源地址:https://github.com/lizijing98/world-cup-cal`;
     
     calData += constant.DESCRIPTION + formatICalText(description) + '\n';
 
