@@ -93,21 +93,21 @@ export function generateICalFile(matches, season = 2026) {
     let description = '';
     
     if (match.stage) {
-      description += `阶段: ${getStageName(match.stage)} `;
+      description += `阶段: ${getStageName(match.stage)}\n`;
     }
     
     if (match.matchday) {
-      description += `轮次: 第${match.matchday}轮 `;
+      description += `轮次: 第${match.matchday}轮\n`;
     }
 
     // 备注栏里添加球场信息
     if (match.venue) {
-      description += `球场: ${match.venue} `;
+      description += `球场: ${match.venue}\n`;
     }
 
     const matchResult = formatMatchResult(match);
     if (matchResult) {
-      description += `比分: ${matchResult} `;
+      description += `比分: ${matchResult}\n`;
     }
 
     description += `更新时间: ${updateTime}`;
