@@ -1,14 +1,14 @@
 {
   "name": "world-cup-cal",
-  "version": "1.8.0",
-  "description": "世界杯赛程iCal文件",
+  "version": "1.0.1",
+  "description": "2026世界杯赛程日历",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "node index.js",
     "start": "node index.js"
   },
-  "author": "Li Zijing",
+  "author": "wish",
   "license": "ISC",
   "dependencies": {
     "moment-timezone": "^0.5.38",
