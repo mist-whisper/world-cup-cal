@@ -1,6 +1,6 @@
 {
   "name": "world-cup-cal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "2026世界杯赛程日历",
   "main": "index.js",
   "type": "module",
