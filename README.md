@@ -24,7 +24,7 @@
 > https://cal.wuyra.com/WorldCupSchedule.ics
 
 * ics文件订阅地址: 
-> https://cdn.jsdelivr.net/gh/lizijing98/world-cup-cal@master/WorldCupSchedule.ics
+> https://cdn.jsdelivr.net/gh/lizijing98/world-cup-cal/WorldCupSchedule.ics
 
 * github订阅地址(GFW内不稳定需代理): 
 > https://raw.githubusercontent.com/lizijing98/world-cup-cal/master/WorldCupSchedule.ics
