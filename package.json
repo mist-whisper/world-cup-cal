@@ -1,20 +1,20 @@
 {
   "name": "world-cup-cal",
-  "version": "1.8.1",
-  "description": "世界杯赛程iCal文件",
+  "version": "1.0.4",
+  "description": "2026世界杯赛程日历",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "node index.js",
     "start": "node index.js"
   },
-  "author": "Li Zijing",
+  "author": "wish",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lizijing98/world-cup-cal.git"
+    "url": "https://github.com/mist-whisper/world-cup-cal.git"
   },
   "bugs": {
-    "url": "https://github.com/lizijing98/world-cup-cal/issues"
+    "url": "https://github.com/mist-whisper/world-cup-cal/issues"
   },
   "license": "ISC",
   "dependencies": {
