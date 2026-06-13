@@ -2,7 +2,7 @@
 
 ## 使用方式
 
-在支持ics订阅的软件中订阅下方提供的订阅地址, 如 iPhone/Mac/Android中的日历App、Outlook、Google 日历. 如果软件有自动更新订阅的设置, 推荐改为每日更新.
+在支持ics订阅的软件中订阅下方提供的订阅地址，如 iPhone/Mac/Android中的日历App、Outlook、Google 日历。如果软件有自动更新订阅的设置, 推荐改为每日更新。
 
 ## 服务订阅
 
@@ -12,10 +12,10 @@
 > https://cal.wuyra.com/WorldCupSchedule.ics
 
 * ics文件订阅地址: 
-> https://cdn.jsdelivr.net/gh/lizijing98/world-cup-cal/WorldCupSchedule.ics
+> https://cdn.jsdelivr.net/gh/mist-whisper/world-cup-cal/WorldCupSchedule.ics
 
 * github订阅地址(GFW内不稳定需代理): 
-> https://raw.githubusercontent.com/lizijing98/world-cup-cal/master/WorldCupSchedule.ics
+> https://raw.githubusercontent.com/mist-whisper/world-cup-cal/master/WorldCupSchedule.ics
 
 ## 更新
 
