@@ -4,18 +4,6 @@
 
 在支持ics订阅的软件中订阅下方提供的订阅地址, 如 iPhone/Mac/Android中的日历App、Outlook、Google 日历. 如果软件有自动更新订阅的设置, 推荐改为每日更新.
 
-<center>
-  <img src="./imgs/iPhone_1.jpeg" width=45%>
-  <img src="./imgs/iPhone_2.jpeg" width=45%>
-</center>
-
-<center>
-  <img src="./imgs/mac_1.png" width=90%>
-  <img src="./imgs/mac_2.png" width=90%>
-  <img src="./imgs/outlook.png" width=90%>
-  <img src="./imgs/google.png" width=90%>
-</center>
-
 ## 服务订阅
 
 订阅ics文件可主动更新，推荐使用此方法订阅
