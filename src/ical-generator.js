@@ -1,3 +1,44 @@
+import fs from 'fs';
+import moment from 'moment-timezone';
+import constant from './constant.js';
+import { formatMatchTitle, getStageName, getTeamMapping } from './team-mapper.js';
+
+const TIME_FORMAT = 'YYYYMMDDTHHmmss';
+
+/**
+ * 格式化比赛结果信息
+ * @function formatMatchResult
+ * @param {Object} match - 比赛对象
+ * @returns {string} 格式化的比赛结果字符串
+ */
+function formatMatchResult(match) {
+  if (match.status !== 'FINISHED' || !match.score) {
+    return '';
+  }
+
+  const homeTeam = getTeamMapping(match.homeTeam?.name);
+  const awayTeam = getTeamMapping(match.awayTeam?.name);
+  const homeScore = match.score.fullTime?.home;
+  const awayScore = match.score.fullTime?.away;
+
+  if (homeScore === null || homeScore === undefined || 
+      awayScore === null || awayScore === undefined) {
+    return '';
+  }
+
+  return `${homeTeam.nameCn}${homeTeam.flag} ${homeScore}:${awayScore} ${awayTeam.nameCn}${awayTeam.flag}`;
+}
+
+/**
+ * 格式化 iCal 文本，确保换行符兼容性
+ * @function formatICalText
+ * @param {string} text - 原始文本
+ * @returns {string} 格式化后的 iCal 文本
+ */
+function formatICalText(text) {
+  return text.replace(/\n/g, '\\n');
+}
+
 /**
  * 生成iCal格式的日历文件内容
  * @function generateICalFile
@@ -32,10 +73,10 @@ export function generateICalFile(matches, season = 2026) {
 
     calData += constant.BEGIN_EVENT;
 
-    // 先计算出比分结果
+    // 先计算出完场比分结果
     const matchResult = formatMatchResult(match);
 
-    // 生成包含完场比分的动态标题
+    // 传入 matchResult 让标题动态显示比分
     const title = formatMatchTitle(match, matchResult);
     calData += constant.SUMMARY + title + '\n';
 
@@ -45,7 +86,7 @@ export function generateICalFile(matches, season = 2026) {
     calData += constant.DTSTART + startTime + '\n';
     calData += constant.DTEND + endTime + '\n';
 
-    // 保留系统原生 LOCATION 字段
+    // 保持系统原生的 LOCATION 字段
     if (match.venue) {
       calData += 'LOCATION:' + formatICalText(match.venue) + '\n';
     }
@@ -60,6 +101,7 @@ export function generateICalFile(matches, season = 2026) {
       description += `轮次: 第${match.matchday}轮\n`;
     }
 
+    // 备注栏里添加球场信息
     if (match.venue) {
       description += `球场: ${match.venue}\n`;
     }
@@ -77,5 +119,22 @@ export function generateICalFile(matches, season = 2026) {
 
   calData += constant.END;
 
+  return calData;
+}
+
+export function saveICalFile(calData, filename = 'WorldCupSchedule.ics') {
+  try {
+    fs.writeFileSync(filename, calData, 'utf8');
+    console.log(`iCal文件保存成功: ${filename}`);
+    return true;
+  } catch (error) {
+    console.error('保存iCal文件失败:', error.message);
+    throw error;
+  }
+}
+
+export function generateAndSaveICal(matches, season = 2026, filename = 'WorldCupSchedule.ics') {
+  const calData = generateICalFile(matches, season);
+  saveICalFile(calData, filename);
   return calData;
 }
