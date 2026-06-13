@@ -56,7 +56,7 @@ export function generateICalFile(matches, season = 2026) {
     constant.VERSION + 
     constant.PRODID + 
     constant.CALSCALE + 
-    `X-WR-CALNAME:${season}世界杯⚽🏆\n` + 
+    `X-WR-CALNAME:${season}美加墨世界杯⚽🏆\n` + 
     constant.APPLE_COLOR;
 
   const sortedMatches = [...matches].sort((a, b) => 
