@@ -20,12 +20,13 @@
 
 订阅ics文件可主动更新，推荐使用此方法订阅
 
-* ics文件订阅地址: 
+* ics文件订阅地址(倒计时版):
+> https://cal.wuyra.com/WorldCupSchedule.ics
 
+* ics文件订阅地址: 
 > https://cdn.jsdelivr.net/gh/lizijing98/world-cup-cal@master/WorldCupSchedule.ics
 
 * github订阅地址(GFW内不稳定需代理): 
-
 > https://raw.githubusercontent.com/lizijing98/world-cup-cal/master/WorldCupSchedule.ics
 
 ## 更新
