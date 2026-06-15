@@ -65,16 +65,16 @@ DTEND:20260614T220000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 荷兰🇳🇱 2:2 日本🇯🇵\n更新时间: 2026/06/15
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:E组-科特迪瓦🇨🇮vs厄瓜多尔🇪🇨
+SUMMARY:E组-科特迪瓦🇨🇮 1:0 厄瓜多尔🇪🇨
 DTSTART:20260614T230000Z
 DTEND:20260615T010000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/06/15
+DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 科特迪瓦🇨🇮 1:0 厄瓜多尔🇪🇨\n更新时间: 2026/06/15
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:F组-瑞典🇸🇪vs突尼斯🇹🇳
+SUMMARY:F组-瑞典🇸🇪 5:1 突尼斯🇹🇳
 DTSTART:20260615T020000Z
 DTEND:20260615T040000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n更新时间: 2026/06/15
+DESCRIPTION:阶段: 小组赛\n轮次: 第1轮\n比分: 瑞典🇸🇪 5:1 突尼斯🇹🇳\n更新时间: 2026/06/15
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:H组-西班牙🇪🇸vs佛得角🇨🇻
