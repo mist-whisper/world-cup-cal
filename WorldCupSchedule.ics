@@ -179,16 +179,16 @@ DTEND:20260619T210000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 美国🇺🇸 2:0 澳大利亚🇦🇺\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:C组-苏格兰🏴󠁧󠁢󠁳󠁣󠁴󠁿vs摩洛哥🇲🇦
+SUMMARY:C组-苏格兰🏴󠁧󠁢󠁳󠁣󠁴󠁿 0:1 摩洛哥🇲🇦
 DTSTART:20260619T220000Z
 DTEND:20260620T000000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/06/20
+DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 苏格兰🏴󠁧󠁢󠁳󠁣󠁴󠁿 0:1 摩洛哥🇲🇦\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:C组-巴西🇧🇷vs海地🇭🇹
+SUMMARY:C组-巴西🇧🇷 3:0 海地🇭🇹
 DTSTART:20260620T003000Z
 DTEND:20260620T023000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/06/20
+DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 巴西🇧🇷 3:0 海地🇭🇹\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:D组-土耳其🇹🇷vs巴拉圭🇵🇾
