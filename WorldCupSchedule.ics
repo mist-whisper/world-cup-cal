@@ -221,16 +221,16 @@ DTEND:20260621T060000Z
 DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 突尼斯🇹🇳 0:4 日本🇯🇵\n更新时间: 2026/06/22
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:H组-西班牙🇪🇸 5:0 沙特阿拉伯🇸🇦
+SUMMARY:H组-西班牙🇪🇸 4:0 沙特阿拉伯🇸🇦
 DTSTART:20260621T160000Z
 DTEND:20260621T180000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 西班牙🇪🇸 5:0 沙特阿拉伯🇸🇦\n更新时间: 2026/06/22
+DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 西班牙🇪🇸 4:0 沙特阿拉伯🇸🇦\n更新时间: 2026/06/22
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:G组-比利时🇧🇪vs伊朗🇮🇷
+SUMMARY:G组-比利时🇧🇪 0:0 伊朗🇮🇷
 DTSTART:20260621T190000Z
 DTEND:20260621T210000Z
-DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n更新时间: 2026/06/22
+DESCRIPTION:阶段: 小组赛\n轮次: 第2轮\n比分: 比利时🇧🇪 0:0 伊朗🇮🇷\n更新时间: 2026/06/22
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:H组-乌拉圭🇺🇾vs佛得角🇨🇻
